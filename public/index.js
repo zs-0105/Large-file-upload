@@ -9,7 +9,7 @@ function read(file) {
             resolve(reader.result)
         }
         reader.onerror = reject
-        reader.readAsBinaryString(file)
+        reader.readAsArrayBuffer(file)
     })
 }
 uploader.addEventListener('change', async (e) => {
